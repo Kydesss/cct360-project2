@@ -6,8 +6,6 @@
         <title>CCT360 Project 2 | Joaquin Pacia</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/bootstrap.css" />
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/script.js"></script>
     </head>
     <body>
         <!-- Top Navigation Bar -->
@@ -56,44 +54,73 @@
                 </div>
             </div>
         </nav>
-        <footer class="bg-dark text-white">
-            <div class="container-fluid">
+        <main>
+            <!-- Contact Form -->
+            <div class="container-fluid mt-5 mb-5">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center">&copy; 2023 Joaquin Pacia</p>
+                        <h1 class="text-center">Contact Me</h1>
                     </div>
+                </div>
+                <div
+                    id="submitAlert"
+                    class="alert alert-success d-none mt-3"
+                    role="alert"
+                >
+                    Your form has been submitted successfully!
+                    <button
+                        type="button"
+                        class="btn-close"
+                        aria-label="Close"
+                        onclick="hideContactAlert()"
+                    ></button>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="photo.html">Photos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="video.html">Videos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html"
-                                    >Contact</a
+                        <form
+                            onsubmit="event.preventDefault(); showContactAlert();"
+                        >
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label"
+                                    >Name</label
                                 >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="resume.html"
-                                    >Resume</a
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="fullName"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailAddress" class="form-label"
+                                    >Email address</label
                                 >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="shopping.html"
-                                    >Shopping</a
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="emailAddress"
+                                    placeholder=""
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label"
+                                    >Message</label
                                 >
-                            </li>
-                        </ul>
+                                <textarea
+                                    class="form-control"
+                                    id="message"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">
+                                Submit
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </footer>
+        </main>
+        <footer class="bg-dark text-white" id="footer"></footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
