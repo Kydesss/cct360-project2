@@ -16,3 +16,12 @@ footer .container-fluid p {
     font-family: "Inter", "Poppins", "Montserrat", sans-serif;
     font-weight: 400;
 }
+
+.card-img {
+    height: 310.1px;
+    overflow: hidden;
+}
+
+.card-img img {
+    transform: translateY(-15%);
+}
