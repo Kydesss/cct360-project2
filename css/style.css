@@ -25,3 +25,12 @@ footer .container-fluid p {
 .card-img img {
     transform: translateY(-15%);
 }
+
+.carousel-img {
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-img img {
+    transform: translateY(-45%);
+}
