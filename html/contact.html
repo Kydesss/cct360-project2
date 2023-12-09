@@ -112,65 +112,85 @@
                     <div class="col-12">
                         <h1 class="text-center">Contact Me</h1>
                     </div>
-                </div>
-                <div id="liveAlertPlaceholder"></div>
-                <form onsubmit="event.preventDefault(); showContactAlert();">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="mb-3">
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="fullName"
-                                    placeholder="Name *"
-                                />
-                            </div>
+                    <div id="liveAlertPlaceholder"></div>
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <h2 class="fs-3">Get In Touch</h2>
+                            <p class="fs-5">
+                                If you have any questions, comments, or
+                                concerns, please feel free to contact me using
+                                the form. I will try to get back to you as soon
+                                as possible.
+                            </p>
                         </div>
-                        <div class="col-6">
-                            <div class="mb-3">
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    id="emailAddress"
-                                    placeholder="Email *"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="phoneNumber"
-                                    placeholder="Phone number"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <textarea
-                                    class="form-control"
-                                    id="message"
-                                    rows="3"
-                                    placeholder="Message *"
-                                ></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div>
-                                <button class="btn btn-primary" type="submit">
-                                    Submit
+                        <div class="col-8">
+                            <form
+                                onsubmit="event.preventDefault(); showContactAlert();"
+                            >
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label
+                                                for="fullName"
+                                                class="form-label"
+                                                >Full Name</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="fullName"
+                                                placeholder="Name *"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label
+                                                for="emailAddress"
+                                                class="form-label"
+                                                >Email Address</label
+                                            >
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="emailAddress"
+                                                placeholder="Email *"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phoneNumber" class="form-label"
+                                        >Phone Number</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="phoneNumber"
+                                        placeholder="Phone number"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label"
+                                        >Message</label
+                                    >
+                                    <textarea
+                                        class="form-control"
+                                        id="message"
+                                        rows="3"
+                                        placeholder="Message *"
+                                    ></textarea>
+                                </div>
+                                <button
+                                    class="btn btn-primary px-4 py-3"
+                                    type="submit"
+                                >
+                                    <strong>Send</strong>
                                 </button>
-                            </div>
+                            </form>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
             <!-- Contact information -->
             <div class="container mt-5">
@@ -202,7 +222,7 @@
                                 </div>
                                 <div class="col-12">
                                     <p>
-                                        My address:
+                                        My work address:
                                         <a
                                             href="https://maps.app.goo.gl/Jq1h4WuRswQ3Xawe7"
                                             target="_blank"

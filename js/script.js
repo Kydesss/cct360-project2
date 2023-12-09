@@ -38,7 +38,7 @@ const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 const appendAlert = (message, type) => {
     const wrapper = document.createElement("div");
     wrapper.innerHTML = [
-        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `<div class="alert alert-${type} alert-dismissible mt-3" role="alert">`,
         `   <div>${message}</div>`,
         '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
         "</div>",
@@ -52,7 +52,7 @@ function showContactAlert() {
     const emailAddress = document.getElementById("emailAddress").value;
     const message = document.getElementById("message").value;
     if (!fullName || !emailAddress || !message) {
-        appendAlert("Please fill out all the required* fields.", "danger");
+        appendAlert("Please fill out all the required fields.", "danger");
     } else {
         appendAlert("Success! Your message has been sent.", "success");
     }
