@@ -57,3 +57,15 @@ function showContactAlert() {
         appendAlert("Success! Your message has been sent.", "success");
     }
 }
+
+function toastTrigger() {
+    const toast = document.getElementById("liveToast");
+    const inputEmail = document.getElementById("inputEmail").value;
+    const toastBootstrap = new bootstrap.Toast(toast);
+
+    if (!inputEmail) {
+        toastBootstrap.hide();
+    } else {
+        toastBootstrap.show();
+    }
+}
