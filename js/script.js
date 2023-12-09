@@ -33,7 +33,7 @@ footer.innerHTML = `
         </div>
     </div>
 `;
-
+// https://getbootstrap.com/docs/5.3/components/alerts/
 const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 const appendAlert = (message, type) => {
     const wrapper = document.createElement("div");
