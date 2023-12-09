@@ -34,26 +34,25 @@ footer.innerHTML = `
     </div>
 `;
 
+const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+const appendAlert = (message, type) => {
+    const wrapper = document.createElement("div");
+    wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        "</div>",
+    ].join("");
+    alertPlaceholder.append(wrapper);
+};
+
 function showContactAlert() {
     const fullName = document.getElementById("fullName").value;
     const emailAddress = document.getElementById("emailAddress").value;
     const message = document.getElementById("message").value;
-
-    const alertElement = document.getElementById("submitAlert");
-
     if (!fullName || !emailAddress || !message) {
-        alertElement.innerHTML = "Please fill out all fields.";
-        alertElement.classList.remove("alert-success");
-        alertElement.classList.add("alert-danger");
-        alertElement.classList.remove("d-none");
+        appendAlert("Please fill out all fields.", "danger");
     } else {
-        alertElement.innerHTML = `Thank you, ${fullName}! Your message has been sent.`;
-        alertElement.classList.remove("alert-danger");
-        alertElement.classList.add("alert-success");
-        alertElement.classList.remove("d-none");
+        appendAlert("Success! Your message has been sent.", "success");
     }
-}
-
-function hideContactAlert() {
-    document.getElementById("submitAlert").classList.add("d-none");
 }
