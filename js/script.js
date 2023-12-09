@@ -52,7 +52,7 @@ function showContactAlert() {
     const emailAddress = document.getElementById("emailAddress").value;
     const message = document.getElementById("message").value;
     if (!fullName || !emailAddress || !message) {
-        appendAlert("Please fill out all fields.", "danger");
+        appendAlert("Please fill out all the required* fields.", "danger");
     } else {
         appendAlert("Success! Your message has been sent.", "success");
     }
