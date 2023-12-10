@@ -1,34 +1,46 @@
 const footer = document.getElementById("footer");
 
 footer.innerHTML = `
-    <div class="container-fluid">
+    <div class="container-fluid py-5">
         <div class="row">
-            <div class="col-12 mt-5">
+            <div class="col-12">
                 <p class="text-center">&copy; 2023 Joaquin Pacia</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 mb-5">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="photo.html">Photos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="video.html">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shopping.html">Shopping</a>
-                    </li>
-                </ul>
+            <!-- -->
+            <div class="col-12 text-center" style="">
+                <a
+                    href="https://www.linkedin.com/in/joaquin-pacia-2551b3259/"
+                    style="text-decoration: none"
+                    class="me-1"
+                >
+                    <img
+                        src="../img/logos/linkedinlogo.png"
+                        alt="LinkedIn Logo"
+                        style="width: 40px"
+                    />
+                </a>
+                <a
+                    href="https://www.youtube.com/channel/UCDZE2Z0eQ9hVDg6JlZgyUsg"
+                    style="text-decoration: none"
+                >
+                    <img
+                        src="../img/logos/Youtube_logo.png"
+                        alt="YouTube Logo"
+                        style="width: 50px"
+                    />
+                </a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <a
+                    href="processpage.html"
+                    style="text-decoration: none"
+                >
+                Process Page
+                </a>
             </div>
         </div>
     </div>
