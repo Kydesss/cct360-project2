@@ -59,13 +59,15 @@ function showContactAlert() {
 }
 
 function toastTrigger() {
-    const toast = document.getElementById("liveToast");
+    const successToast = document.getElementById("successToast");
+    const errorToast = document.getElementById("errorToast");
     const inputEmail = document.getElementById("inputEmail").value;
-    const toastBootstrap = new bootstrap.Toast(toast);
 
     if (!inputEmail) {
-        toastBootstrap.hide();
+        const toastBootstrap = new bootstrap.Toast(errorToast);
+        toastBootstrap.show();
     } else {
+        const toastBootstrap = new bootstrap.Toast(successToast);
         toastBootstrap.show();
     }
 }

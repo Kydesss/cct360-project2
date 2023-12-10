@@ -508,7 +508,7 @@
 
             <div class="toast-container position-fixed bottom-0 end-0 p-3">
                 <div
-                    id="liveToast"
+                    id="successToast"
                     class="toast"
                     role="alert"
                     aria-live="assertive"
@@ -528,6 +528,29 @@
                     </div>
                     <div class="toast-body">
                         You have successfully subscribed to my newsletter!
+                    </div>
+                </div>
+            </div>
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div
+                    id="errorToast"
+                    class="toast"
+                    role="alert"
+                    aria-live="assertive"
+                    aria-atomic="true"
+                >
+                    <div class="toast-header">
+                        <strong class="me-auto text-danger">Error</strong>
+                        <small>now</small>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="toast"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="toast-body">
+                        You haven't entered a valid email address.
                     </div>
                 </div>
             </div>
