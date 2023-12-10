@@ -34,3 +34,9 @@ footer .container-fluid p {
 .carousel-img img {
     transform: translateY(-45%);
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 8rem;
+    height: 8rem;
+}
