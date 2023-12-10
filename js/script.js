@@ -22,7 +22,7 @@ footer.innerHTML = `
                     />
                 </a>
                 <a
-                    href="https://www.youtube.com/channel/UCDZE2Z0eQ9hVDg6JlZgyUsg"
+                    href="https://www.youtube.com/channel/UCJIwCbthOe5vs_1pxQudHrQ"
                     style="text-decoration: none"
                 >
                     <img
