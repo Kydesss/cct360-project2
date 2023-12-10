@@ -33,16 +33,6 @@ footer.innerHTML = `
                 </a>
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col-12 text-center">
-                <a
-                    href="processpage.html"
-                    style="text-decoration: none"
-                >
-                Process Page
-                </a>
-            </div>
-        </div>
     </div>
 `;
 // https://getbootstrap.com/docs/5.3/components/alerts/
