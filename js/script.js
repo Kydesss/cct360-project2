@@ -56,7 +56,10 @@ function showContactAlert() {
     if (!fullName || !emailAddress || !message) {
         appendAlert("Please fill out all the required fields.", "danger");
     } else {
-        appendAlert("Success! Your message has been sent.", "success");
+        appendAlert(
+            `Success! Your message has been sent, ${fullName}.`,
+            "success"
+        );
     }
 }
 
