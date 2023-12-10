@@ -152,7 +152,7 @@
                                 />
                             </a>
                         </div>
-                        <div class="carousel-caption">
+                        <div class="carousel-caption text-primary">
                             <h5 class="fs-1">Singapore 2023</h5>
                             <p>Pictures from my trip to Singapore in 2023.</p>
                         </div>
@@ -167,7 +167,7 @@
                                 />
                             </a>
                         </div>
-                        <div class="carousel-caption">
+                        <div class="carousel-caption text-black">
                             <h5 class="fs-1">Philippines 2023</h5>
                             <p>
                                 Pictures from my trip to the Philippines in
@@ -185,7 +185,7 @@
                                 />
                             </a>
                         </div>
-                        <div class="carousel-caption text-dark">
+                        <div class="carousel-caption text-black">
                             <h5 class="fs-1">Videos of Iceskating</h5>
                             <p>Videos of my iceskating at the Mall of Asia.</p>
                         </div>
@@ -249,21 +249,19 @@
                     </div>
                 </div>
             </div>
-            <!-- Photos section -->
-            <div></div>
-            <!-- Videos section -->
-            <div></div>
             <!-- Subscribe to newsletter -->
             <div class="container my-5">
-                <h5>Subscribe to my monthly newsletter</h5>
                 <form onsubmit="event.preventDefault(); toastTrigger();">
+                    <label for="inputEmail" class="fs-5 fw-medium"
+                        >Subscribe to my monthly newsletter</label
+                    >
                     <div class="d-flex">
                         <input
                             type="email"
                             class="form-control me-2"
                             id="inputEmail"
-                            aria-describedby="emailHelp"
                             style="width: 250px"
+                            placeholder="Enter email"
                         />
                         <button type="submit" class="btn btn-secondary">
                             <strong>Subscribe</strong>
