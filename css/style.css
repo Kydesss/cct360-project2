@@ -18,12 +18,13 @@ footer .container-fluid p {
 }
 
 .card-img {
-    height: 310.1px;
+    max-height: 310.1px;
+    display: flex;
+    height: fit-content;
+    /* max-height: 350px; */
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-}
-
-.card-img img {
-    transform: translateY(-15%);
 }
 
 .carousel-img {
